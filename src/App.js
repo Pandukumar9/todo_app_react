@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import './App.css';
+import Calculator from './pages/Calculator';
+import Virdom from './pages/Virtualdom';
 
 function App() {
   let [todolist, updateTodos] = useState([
@@ -35,7 +37,8 @@ function App() {
     updateTodos(updatedtods);
   }
   return (
-    <div className='container mt-5 w-50'>
+    <>
+ <div className='container mt-5 w-50'>
       <h1 className='text-center'>Todo app using in react</h1>
       <div className='input-group'>
         <input type='text'className='form-control' onChange={(e) => {
@@ -59,6 +62,12 @@ function App() {
         }
       </ul>
     </div>
+
+    <Calculator></Calculator>
+
+    <Virdom></Virdom>
+    </>
+  
   );
 }
 
