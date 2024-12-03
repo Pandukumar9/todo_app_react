@@ -1,9 +1,11 @@
-import Keypad from "./keypad";
 import '../styles/Calculator.css';
 import { useState } from "react";
 import Condirender from "./Condirender";
 import Testeffect from "./testeffect";
-import Userlist from "./Userlist";
+// import Userlist from "./Userlist";
+import StaticImages from "./Staticimages";
+import Routeconcept from './Routeconcept';
+import Listkey from './Listkey';
 
 function Virdom(){
     let [count, setCount] = useState(0);
@@ -34,7 +36,13 @@ function Virdom(){
 
        <Testeffect></Testeffect>
 
-       <Userlist></Userlist>
+       {/* <Userlist></Userlist> */}
+
+       <StaticImages></StaticImages>
+
+       <Routeconcept></Routeconcept>
+
+       <Listkey></Listkey>
      </>
     )
 }
