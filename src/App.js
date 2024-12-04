@@ -37,6 +37,9 @@ function App() {
     )
     updateTodos(updatedtods);
   }
+
+  let isAdmin = 'true';
+
   return (
     <>
  <div className='container mt-5 w-50'>
@@ -68,7 +71,7 @@ function App() {
 
     <Virdom></Virdom>
 
-    <Homeee></Homeee>
+    <Homeee data={isAdmin}></Homeee>
     </>
   
   );

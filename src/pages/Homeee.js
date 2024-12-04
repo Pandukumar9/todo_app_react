@@ -1,10 +1,12 @@
 import Productlist from "./Productlist"
 
-function Homeee(){
+function Homeee({data}){
+
     return(
         <>
           <h2>This is the home component</h2>
-          <Productlist></Productlist>
+          {/* <h2>Admin : {data}</h2> */}
+          <Productlist data={data}></Productlist>
         </>
     )
 }
