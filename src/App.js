@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Calculator from './pages/Calculator';
 import Virdom from './pages/Virtualdom';
+import Homeee from './pages/Homeee';
 
 function App() {
   let [todolist, updateTodos] = useState([
@@ -66,6 +67,8 @@ function App() {
     <Calculator></Calculator>
 
     <Virdom></Virdom>
+
+    <Homeee></Homeee>
     </>
   
   );
