@@ -7,6 +7,7 @@ import StaticImages from "./Staticimages";
 import Routeconcept from './Routeconcept';
 import Listkey from './Listkey';
 import Refhook from './Refhook';
+import Custamhook from './Custamhook';
 
 function Virdom(){
     let [count, setCount] = useState(0);
@@ -46,6 +47,8 @@ function Virdom(){
        <Listkey></Listkey>
 
        <Refhook></Refhook>
+
+       <Custamhook></Custamhook>
      </>
     )
 }
