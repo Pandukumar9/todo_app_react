@@ -8,6 +8,7 @@ import Routeconcept from './Routeconcept';
 import Listkey from './Listkey';
 import Refhook from './Refhook';
 import Custamhook from './Custamhook';
+import GetApiData from './Utils';
 
 function Virdom(){
     let [count, setCount] = useState(0);
@@ -49,6 +50,8 @@ function Virdom(){
        <Refhook></Refhook>
 
        <Custamhook></Custamhook>
+
+       <GetApiData></GetApiData>
      </>
     )
 }
