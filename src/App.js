@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { createContext, useState } from 'react';
 import './App.css';
 import Calculator from './pages/Calculator';
 import Virdom from './pages/Virtualdom';
 import Homeee from './pages/Homeee';
+import Usememohook from './pages/Usememohook';
 
 function App() {
   let [todolist, updateTodos] = useState([
@@ -38,7 +39,12 @@ function App() {
     updateTodos(updatedtods);
   }
 
-  let isAdmin = 'true';
+  // let isAdmin = 'true';
+
+  let p = {
+    name: 'mobile',
+    price: 24000
+  }
 
   return (
     <>
@@ -71,10 +77,18 @@ function App() {
 
     <Virdom></Virdom>
 
-    <Homeee data={isAdmin}></Homeee>
+    <context.Provider value={p}>
+       {/* <Homeee data={isAdmin}></Homeee> */}
+       <Homeee></Homeee>
+    </context.Provider>
+
+    {/* <Homeee data={isAdmin}></Homeee> */}
+
+    <Usememohook></Usememohook>
     </>
   
   );
 }
 
 export default App;
+export let context = createContext();
