@@ -4,6 +4,7 @@ import Calculator from './pages/Calculator';
 import Virdom from './pages/Virtualdom';
 import Homeee from './pages/Homeee';
 import Usememohook from './pages/Usememohook';
+import Usememohook2 from './pages/Usememohook2';
 
 function App() {
   let [todolist, updateTodos] = useState([
@@ -85,6 +86,8 @@ function App() {
     {/* <Homeee data={isAdmin}></Homeee> */}
 
     <Usememohook></Usememohook>
+
+    <Usememohook2></Usememohook2>
     </>
   
   );
