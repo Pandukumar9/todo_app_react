@@ -5,6 +5,7 @@ import Virdom from './pages/Virtualdom';
 import Homeee from './pages/Homeee';
 import Usememohook from './pages/Usememohook';
 import Usememohook2 from './pages/Usememohook2';
+import Parentchild2 from './pages/Parentchild2';
 
 function App() {
   let [todolist, updateTodos] = useState([
@@ -88,6 +89,8 @@ function App() {
     <Usememohook></Usememohook>
 
     <Usememohook2></Usememohook2>
+
+    <Parentchild2></Parentchild2>
     </>
   
   );
